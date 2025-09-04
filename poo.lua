@@ -1403,9 +1403,6 @@ local function apply_anti_void(delta_time)
     end
 end
 
-local default_chat_system_events = replicated_storage:WaitForChild("DefaultChatSystemChatEvents")
-local say_message_request = default_chat_system_events:WaitForChild("SayMessageRequest")
-local on_message_done_filtering = default_chat_system_events:WaitForChild("OnMessageDoneFiltering")
 local network_client = game:GetService("NetworkClient")
 local script_context = game:GetService("ScriptContext")
 
