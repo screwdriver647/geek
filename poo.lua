@@ -1407,11 +1407,6 @@ local network_client = game:GetService("NetworkClient")
 local script_context = game:GetService("ScriptContext")
 
 local player_gui = local_player:WaitForChild("PlayerGui")
-local chat_gui = player_gui:WaitForChild("Chat")
-local frame = chat_gui:WaitForChild("Frame")
-local chat_channel_parent_frame = frame:WaitForChild("ChatChannelParentFrame")
-local message_log_display_frame = chat_channel_parent_frame:WaitForChild("Frame_MessageLogDisplay")
-local scroller = message_log_display_frame:WaitForChild("Scroller")
 
 local function render_silent_aimbot(delta_time)
     field_of_view_circle.Visible = false
@@ -1716,3 +1711,4 @@ starter_gui:SetCore("SendNotification", {
     Icon = "rbxassetid://10248739816",
     Duration = 7
 })
+
